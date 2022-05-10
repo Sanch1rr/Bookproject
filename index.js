@@ -25,7 +25,7 @@ router.get("/", function (req, res) {
         }
       }
 
-      res.send(randombooks);
+      res.render("index.ejs", { randombooks: randombooks });
     }
   });
 });
